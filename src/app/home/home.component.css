@@ -1,0 +1,14 @@
+/* img {
+    max-width: 400px;
+    height: 200; 
+} */
+
+img{
+    width:400;
+    height:400px; 
+ /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+     object-fit:scale-down;
+ }
+ mat-card-content p {
+     text-align: center;
+ }

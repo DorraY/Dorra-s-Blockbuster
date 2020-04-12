@@ -1,0 +1,28 @@
+.full-width {
+    width: 95%;
+}
+
+.half-width {
+    width: 45%
+}
+
+.form-size {
+    width: 75%;
+}
+
+/* mat-slide-toggle {
+    color: black;
+}
+
+mat-form-field {
+    background-color: black;
+}
+
+mat-select {
+    background-color: black;
+} */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+  }

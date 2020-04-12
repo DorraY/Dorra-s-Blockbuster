@@ -1,0 +1,15 @@
+.jumbotron {
+    margin: 0px auto;
+    padding: 70px 30px;
+    background: #df4e86;
+    color: white;
+    min-height: 150px;
+}
+mat-toolbar {
+    position: sticky;
+    top: 0px;
+    z-index: 1000000;
+  }
+.active {
+    background-color: #000000;
+}

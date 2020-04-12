@@ -1,0 +1,32 @@
+
+<mat-toolbar color="primary">
+    <a mat-button routerLink='/home' routerLinkActive='active' ><span class="fa fa-home fa-lg"></span> Home</a>
+    <a mat-button routerLink='/about' routerLinkActive='active' ><span class="fa fa-info fa-lg"></span> About</a>
+    <a mat-button routerLink='/list' routerLinkActive='active'><span class="fa fa-list fa-lg"></span> List</a>
+    <a mat-button routerLink='/contact' routerLinkActive='active'><span class="fa fa-address-card fa-lg"></span> Contact</a>
+    <span class="flex-spacer"></span>
+    <a mat-button   (click)="openLoginForm()" ><span class="fa fa-sign-in fa-lg">Login</span></a>
+  </mat-toolbar>
+  
+  <div class="container jumbotron"
+      fxLayout="row"
+      fxLayout.sm="column" 
+      fxLayout.xs="column" 
+      fxLayoutAlign.xs="start center"
+      fxLayoutAlign.sm="start center" 
+      fxLayoutAlign.gt-sm="center center" 
+      fxLayoutGap="10px">
+  
+    <div fxFlex fxFlex.gt-sm="50%">
+      <h1>Dorra's blockbuster</h1>
+      <p>This is the place for all you movie lovers out there. Don't hesitate to explore and join in!  </p>
+    </div>
+
+    <div fxFlex fxFlex.gt-sm="20%">
+      <img height="200" src="../../assets/images/myImage.png" alt="Logo">
+    </div>      
+
+
+
+    <div fxFlex></div>
+  </div>

@@ -1,0 +1,17 @@
+p span {
+    color: black;
+}
+
+mat-card-content p {
+    font-size: medium;
+}
+
+mat-card {
+    text-align: center;
+
+}
+
+img {
+    max-width: 400px;
+    height: auto; 
+}

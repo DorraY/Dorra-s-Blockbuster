@@ -1,0 +1,82 @@
+<div class="container"
+  fxLayout="column"
+  fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+        <h3>About Us</h3>
+        <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <div fxLayout="column" fxLayout.gt-sm="row">
+      <div fxFlex="70">
+        <h2>Our History</h2>
+        <p>Started in 2020, Dorra's blockbuster quickly established itself as a movies icon par excellence in Dorraland. With its unique brand of world films that can be found nowhere else, it enjoys patronage from the A-list clientele in Dorraland.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your screen the next time you visit us.</p>
+        <p>The shop traces its humble beginnings to <em>the simple computer screen</em>, owned by our CEO, Mrs. Dorra Youssef.</p>
+      </div>
+      <div fxFlex="30">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>
+            <h2>Facts At a Glance</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <dl>
+              <dt>Started</dt>
+              <dd>Janurary 2020</dd>
+              <dt>Idea</dt>
+              <dd>DorraY</dd>
+              <dt>Code</dt>
+              <dd>DorraY</dd>
+              <dt>Design</dt>
+              <dd>DorraY</dd>
+            </dl>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  
+  <div fxFlex>
+    <mat-card>
+      <blockquote>
+        <h3>Best recommendations ever! Great taste in movies.</h3>
+        <footer>-- Some Dorraland wanderer,
+          <cite>2020</cite>
+        </footer>
+      </blockquote>
+    </mat-card>
+  </div>
+  <h2>Corporate Leadership</h2>
+
+  <div fxFlex [hidden]="leaders" >
+    <mat-spinner></mat-spinner>
+    <h4>Loading</h4>
+  </div>
+  <div fxFlex>  
+    
+    
+    <mat-list *ngIf="leaders"  [@expand]>
+      
+    <mat-list-item *ngFor="let leader of leaders">
+      
+      <img height="100" src="{{  BaseURL + leader.image}}"  alt={{leader.name}}>
+      <p mat-line>
+        <span><b>{{leader.name}}</b></span>
+      </p>
+      <p mat-line>
+        <span>{{leader.designation}}</span>
+      </p>
+      <p mat-line>
+        <span>{{leader.description}}</span>
+      </p>
+      
+    </mat-list-item>
+    
+  </mat-list>
+  
+  </div>
+</div>
